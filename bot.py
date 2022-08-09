@@ -8,7 +8,6 @@ class Bot:
     
     def _sendApi(self, method, data):
         url = f'{self.url_api}/{method}'
-        print(url)
         request = Request(url, urlencode(data).encode())
         json = urlopen(request).read().decode()
         return json
