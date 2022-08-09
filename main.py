@@ -18,7 +18,7 @@ logger_file_handler.setFormatter(formatter)
 logger.addHandler(logger_file_handler)
 
 try:
-    token = os.getenv('token_bot')
+    token = os.getenv('TOKEN_BOT')
 except KeyError:
     token = "Token not available!"
     logger.info("Token not available!")
