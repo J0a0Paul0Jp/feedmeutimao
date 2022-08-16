@@ -2,7 +2,7 @@ name: Cron Action
 on:
   workflow_dispatch:
   schedule:
-    - cron: '*/10 * * * *'
+    - cron: '*/5 * * * *'
 
 
 jobs:
@@ -33,4 +33,5 @@ jobs:
         uses: ad-m/github-push-action@v0.6.0
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          branch: main 
+          branch: J0a0Paul0Jp-patch-1
+
